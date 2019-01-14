@@ -1,32 +1,67 @@
-.App {
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 20px auto 0;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 50px;
+}
+
+.links .link {
+  margin-top: 20px;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.component.home {
+  background-color: gray;
+  position: relative;
+}
+
+.home--inside-scroller {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+
+.component.services {
+  background-color: red;
+}
+
+.component.about {
+  background-color: blue;
+}
+
+
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto auto;
+  text-align: center;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
 }
