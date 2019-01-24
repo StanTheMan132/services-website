@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Pager} from 'react-bootstrap';
 import './App.css';
+
+import Request from './pages/request';
 import Home from './pages/home';
 import Services from './pages/services';
 import About from './pages/about';
@@ -22,7 +24,7 @@ class App extends Component {
 
   getPagesNumbers = () => {
     const pageNumbers = [];
-    for (let i = 1; i<=3; i++) {
+    for (let i = 1; i<=4; i++) {
       pageNumbers.push(
         <Pager.Item key={i} eventKey={i-1} onSelect={this.goToPage}>{i}</Pager.Item>
       )
@@ -40,6 +42,7 @@ class App extends Component {
           <Home />
           <Services/>
           <About/>
+          <Request/>
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
           {pageNumbers}

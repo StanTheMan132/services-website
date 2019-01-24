@@ -1,67 +1,55 @@
-
 html, body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
-}
-
-.title {
-  margin: 20px auto 0;
-  text-align: center;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-}
-
-.links .link {
-  margin-top: 20px;
-}
-
-.component {
-  height: 100%;
+  margin: 0;
   width: 100%;
-  display: flex;
+  height: 100%;
 }
-
-.component.home {
-  background-color: gray;
-  position: relative;
-}
-
-.home--inside-scroller {
-  position: absolute;
-  right: 20px;
-  top: 100px;
-}
-
-.component.services {
-  background-color: red;
-}
-
-.component.about {
-  background-color: blue;
-}
-
-
-
-h2 {
-  font-family: 'Courier New', Courier, monospace;
-  margin: auto auto;
-  text-align: center;
-}
-
 .pagination-additional-class {
   margin: 0;
   position: fixed;
-  top: 20px;
+  top: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
-.pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
-  margin-right: 50px;
+
+.component {
+  padding-top: 2%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+
+.component.home {
+  background-color: #4ABDAC;
+}
+
+.component.services {
+  background-color: #FC4A1A;
+}
+
+.component.about{
+  background-color: #4ABDAC;
+}
+
+.component.request{
+  background-color: #FC4A1A;
+}
+
+label {
+  width: 20px;
 }
