@@ -20,7 +20,7 @@ class Request extends Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state)
+    console.log(this.state);
     event.preventDefault();
   }
 
